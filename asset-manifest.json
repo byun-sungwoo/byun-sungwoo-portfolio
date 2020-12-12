@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/byun-sungwoo-portfolio/static/css/main.238cdc37.chunk.css",
-    "main.js": "/byun-sungwoo-portfolio/static/js/main.a09332cb.chunk.js",
-    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.a09332cb.chunk.js.map",
+    "main.js": "/byun-sungwoo-portfolio/static/js/main.241ec03e.chunk.js",
+    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.241ec03e.chunk.js.map",
     "runtime-main.js": "/byun-sungwoo-portfolio/static/js/runtime-main.98d4667e.js",
     "runtime-main.js.map": "/byun-sungwoo-portfolio/static/js/runtime-main.98d4667e.js.map",
     "static/js/2.d59dc786.chunk.js": "/byun-sungwoo-portfolio/static/js/2.d59dc786.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.98d4667e.js",
     "static/js/2.d59dc786.chunk.js",
     "static/css/main.238cdc37.chunk.css",
-    "static/js/main.a09332cb.chunk.js"
+    "static/js/main.241ec03e.chunk.js"
   ]
 }
