@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body {
+	margin: 0;
+	height: 100vh;
+	overflow: hidden;
+}
+canvas {
+	display: block;
+}
+span{
+	background: white !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.githubio {
+	position: absolute;
+	color: white;
+	font-size: 1.25em;
+	bottom: .5em;
+	left: 1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* @import url(https://fonts.googleapis.com/css?family=Dosis:300,400); */
+
+h1 a {
+	color: #fff;
+	font-size: 1em;
+	text-decoration: none;
+	/* display: inline-block;
+	position: relative; */
+	font-family: 'Dosis', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/*effect-underline*/
+a.underline:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 1px solid;
+	margin-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a.underline:hover:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
