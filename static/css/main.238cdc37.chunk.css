@@ -1,0 +1,2 @@
+body{margin:0;height:100vh;overflow:hidden}canvas{display:block}span{background:#fff!important}.githubio{position:absolute;color:#fff;font-size:1.25em;bottom:.5em;left:1em}h1 a{color:#fff;font-size:1em;text-decoration:none;font-family:"Dosis",sans-serif}a.underline:after{content:"";position:absolute;left:0;display:inline-block;height:1em;width:100%;border-bottom:1px solid;margin-top:10px;opacity:0;transition:opacity .35s,transform .35s;transform:scaleX(0)}a.underline:hover:after{opacity:1;transform:scale(1)}
+/*# sourceMappingURL=main.238cdc37.chunk.css.map */

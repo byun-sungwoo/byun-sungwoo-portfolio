@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/byun-sungwoo-portfolio/static/css/main.238cdc37.chunk.css",
+    "main.js": "/byun-sungwoo-portfolio/static/js/main.542b7a13.chunk.js",
+    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.542b7a13.chunk.js.map",
+    "runtime-main.js": "/byun-sungwoo-portfolio/static/js/runtime-main.3170ae05.js",
+    "runtime-main.js.map": "/byun-sungwoo-portfolio/static/js/runtime-main.3170ae05.js.map",
+    "static/js/2.1b39bc24.chunk.js": "/byun-sungwoo-portfolio/static/js/2.1b39bc24.chunk.js",
+    "static/js/2.1b39bc24.chunk.js.map": "/byun-sungwoo-portfolio/static/js/2.1b39bc24.chunk.js.map",
+    "static/js/3.9eba57b8.chunk.js": "/byun-sungwoo-portfolio/static/js/3.9eba57b8.chunk.js",
+    "static/js/3.9eba57b8.chunk.js.map": "/byun-sungwoo-portfolio/static/js/3.9eba57b8.chunk.js.map",
+    "index.html": "/byun-sungwoo-portfolio/index.html",
+    "static/css/main.238cdc37.chunk.css.map": "/byun-sungwoo-portfolio/static/css/main.238cdc37.chunk.css.map",
+    "static/js/2.1b39bc24.chunk.js.LICENSE.txt": "/byun-sungwoo-portfolio/static/js/2.1b39bc24.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3170ae05.js",
+    "static/js/2.1b39bc24.chunk.js",
+    "static/css/main.238cdc37.chunk.css",
+    "static/js/main.542b7a13.chunk.js"
+  ]
+}
