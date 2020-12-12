@@ -1,10 +1,10 @@
-import FullPage from './component/FullPage';
+import Resize from './component/Resize';
 import './App.css';
 
 function App() {
 	return (
 		<div>
-			<FullPage />
+			<Resize />
 			<h1 className="githubio" align="center">
 				<a
 				target="_blank"

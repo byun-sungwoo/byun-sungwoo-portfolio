@@ -37,12 +37,10 @@ export default class Board extends Component {
 		this.mount.appendChild(renderer.domElement);
 
 		function onWindowResize() {
-			renderer.setSize(width, height);
 			camera.aspect = width/height;
 			camera.updateProjectionMatrix();
+			renderer.setSize(width, height);
 		}
-
-		window.addEventListener('resize', onWindowResize)
 
 		let blocks = [];
 		let raycaster = new THREE.Raycaster();
@@ -103,6 +101,7 @@ export default class Board extends Component {
 			}
 		}
 		window.addEventListener('mousemove', onMouseMove);
+		window.addEventListener('resize', onWindowResize);
 		drawScene();
 	}
 
