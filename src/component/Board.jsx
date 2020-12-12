@@ -11,13 +11,11 @@ export default class Board extends Component {
 			color: props.color !== undefined && props.color !== null ? props.color : '#0f1011',
 			action: props.action !== undefined && props.action !== null ? props.action : 'flip'
 		}
-		console.log(this.state);
 	}
 
 	componentDidMount() {
 		const color = this.state.color;
 		const action = this.state.action;
-		console.log(action, color)
 
 		// Setup
 		const width = this.mount.clientWidth;
@@ -86,15 +84,18 @@ export default class Board extends Component {
 				// intersects[i].object.material.color.set('#1ED760');
 				let tl1 = new TimelineMax();
 				if(action !== undefined && action !== null && action === 'pull') {
-					tl1.to(intersects[i].object.position, 1, {z: -4.5, ease: Expo.easeOut});
+					tl1.to(intersects[i].object.position, 1, {z: -4.25, ease: Expo.easeOut});
 					tl1.to(intersects[i].object.position, 1, {z: -5, ease: Expo.easeOut});
 				} else if(action !== undefined && action !== null && action === 'push') {
-					tl1.to(intersects[i].object.position, 1, {z: -5.5, ease: Expo.easeOut});
+					tl1.to(intersects[i].object.position, 1, {z: -5.75, ease: Expo.easeOut});
 					tl1.to(intersects[i].object.position, 1, {z: -5, ease: Expo.easeOut});
-				} else {
+				} else if(action !== undefined && action !== null && action === 'flip-right') {
 					tl1.to(intersects[i].object.rotation, 1.5, {y: Math.PI*.5, ease: Expo.easeOut});
-					// tl1.to(intersects[i].object.rotation, 1, {x: Math.PI*.5, ease: Expo.easeOut}, '=-.1');
 					tl1.to(intersects[i].object.rotation, 0, {y: 0, ease: Expo.easeOut});
+				} else {
+					tl1.to(intersects[i].object.rotation, 1.5, {x: Math.PI*.5, ease: Expo.easeOut});
+					tl1.to(intersects[i].object.rotation, 0, {x: 0, ease: Expo.easeOut});
+					// tl1.to(intersects[i].object.rotation, 1, {x: Math.PI*.5, ease: Expo.easeOut}, '=-.1');
 					// tl1.to(intersects[i].object.rotation, 0, {x: 0, ease: Expo.easeOut});
 				}
 				// tl1.to(intersects[i].object.position, .5, {x: intersects[i].object.position-, ease: Expo.easeOut});
@@ -103,6 +104,11 @@ export default class Board extends Component {
 		window.addEventListener('mousemove', onMouseMove);
 		window.addEventListener('resize', onWindowResize);
 		drawScene();
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('mousemove', this.onMouseMove);
+		window.removeEventListener('resize', this.onWindowResize);
 	}
 
 	render() {
