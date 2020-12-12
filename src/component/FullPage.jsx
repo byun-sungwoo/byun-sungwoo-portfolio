@@ -5,7 +5,7 @@ export default class FullPage extends Component {
 	constructor() {
 		super();
 		this.state = {
-			sectionsColor: ['#0f1011', '#0f1011', '#0f1011'],
+			sectionsColor: ['#0f1011', '#0f1011', '#0f1011', '#0f1011'],
 		}
 	}
 
