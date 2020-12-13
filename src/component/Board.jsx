@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import * as THREE from 'three';
 import { Expo, TimelineMax } from "gsap";
+// import { FontLoader } from 'three';
 
 // props.action is "flip", "push", "pull"
 export default class Board extends Component {
@@ -9,12 +10,13 @@ export default class Board extends Component {
 		super(props);
 		this.state = {
 			color: props.color !== undefined && props.color !== null ? props.color : '#0f1011',
-			action: props.action !== undefined && props.action !== null ? props.action : 'flip'
+			colorStart: props.colorStart !== undefined && props.colorStart !== null ? hexToRgb(props.colorStart) : '15,16,17',
+			colorEnd: props.colorEnd !== undefined && props.colorEnd !== null ? hexToRgb(props.colorEnd) : '15,16,17',
+			action: props.action !== undefined && props.action !== null ? props.action : 'flip',
 		}
 	}
 
 	componentDidMount() {
-		const color = this.state.color;
 		const action = this.state.action;
 
 		// Setup
@@ -49,8 +51,11 @@ export default class Board extends Component {
 		for (let i = -20; i <= 20; i++) {
 			let material;
 			let mesh;
-			for (let j = -10; j <= 10; j++) {
-				material = new THREE.MeshLambertMaterial({color: color});
+			let blockCount = 7;
+			let colorArray = interpolateColors(`rgb(${this.state.colorStart})`, `rgb(${this.state.colorEnd})`, (blockCount*2)+1);
+			for (let j = -blockCount; j <= blockCount; j++) {
+				material = new THREE.MeshLambertMaterial({color: colorArray[(blockCount*2)-(blockCount+j)]});
+				// material = new THREE.MeshBasicMaterial({color: colorArray[(blockCount*2)-(blockCount+j)]});
 				mesh = new THREE.Mesh(geometry, material);
 				mesh.position.y = j*1;
 				mesh.position.x = i*1;
@@ -60,12 +65,12 @@ export default class Board extends Component {
 			}
 		}
 
-		// Adding Light
-		let light = new THREE.PointLight(0xFFFFFF, 1, 500);
-		light.position.set(0,0,0);
-		scene.add(light);
+		// // Adding Light
+		let light = new THREE.PointLight(0xFFFFFF, 1, 100);
+		// light.position.set(0,0,0);
+		// scene.add(light);
 
-		light = new THREE.PointLight(0xFFFFFF, 2, 500);
+		light = new THREE.PointLight(0xFFFFFF, 1.5, 100);
 		light.position.set(0,0,25);
 		scene.add(light);
 
@@ -92,6 +97,25 @@ export default class Board extends Component {
 				} else if(action !== undefined && action !== null && action === 'flip-right') {
 					tl1.to(intersects[i].object.rotation, 1.5, {y: Math.PI*.5, ease: Expo.easeOut});
 					tl1.to(intersects[i].object.rotation, 0, {y: 0, ease: Expo.easeOut});
+				} else if(action !== undefined && action !== null && action === 'random') {
+					switch(Math.floor(Math.random()*4)) {
+					case 0:
+						tl1.to(intersects[i].object.rotation, 1.5, {y: Math.PI*.5, ease: Expo.easeOut});
+						tl1.to(intersects[i].object.rotation, 0, {y: 0, ease: Expo.easeOut});
+						break;
+					case 1:
+						tl1.to(intersects[i].object.rotation, 1.5, {y: -Math.PI*.5, ease: Expo.easeOut});
+						tl1.to(intersects[i].object.rotation, 0, {y: 0, ease: Expo.easeOut});
+						break;
+					case 2:
+						tl1.to(intersects[i].object.rotation, 1.5, {x: Math.PI*.5, ease: Expo.easeOut});
+						tl1.to(intersects[i].object.rotation, 0, {x: 0, ease: Expo.easeOut});
+						break;
+					default:
+						tl1.to(intersects[i].object.rotation, 1.5, {x: -Math.PI*.5, ease: Expo.easeOut});
+						tl1.to(intersects[i].object.rotation, 0, {x: 0, ease: Expo.easeOut});
+						break;
+					}
 				} else {
 					tl1.to(intersects[i].object.rotation, 1.5, {x: Math.PI*.5, ease: Expo.easeOut});
 					tl1.to(intersects[i].object.rotation, 0, {x: 0, ease: Expo.easeOut});
@@ -124,4 +148,42 @@ export default class Board extends Component {
 			/>
 		)
 	}
+}
+
+function hexToRgb(hex) {
+	var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+	return result
+	?	[	parseInt(result[1], 16),
+			parseInt(result[2], 16),
+			parseInt(result[3], 16)]
+	: null;
+}
+
+function interpolateColor(color1, color2, factor) {
+	if (arguments.length < 3) { 
+		factor = 0.5; 
+	}
+	var result = color1.slice();
+	for (var i = 0; i < 3; i++) {
+		result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+	}
+	return result;
+};
+
+function interpolateColors(color1, color2, steps) {
+	var stepFactor = 1 / (steps - 1),
+		interpolatedColorArray = [];
+
+	color1 = color1.match(/\d+/g).map(Number);
+	color2 = color2.match(/\d+/g).map(Number);
+
+	for(var i = 0; i < steps; i++) {
+		let arr = interpolateColor(color1, color2, stepFactor * i);
+		let r = arr[0];
+		let g = arr[1];
+		let b = arr[2];
+		interpolatedColorArray.push("#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1));
+	}
+
+	return interpolatedColorArray;
 }

@@ -1,20 +1,55 @@
+import React, { Component } from 'react';
 import Resize from './component/Resize';
 import './App.css';
 
-function App() {
-	return (
-		<div>
-			<Resize />
-			<h1 className="githubio" align="center">
+export default class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			intro: true
+		}
+	}
+
+	render() {
+		let intro = this.state.intro;
+		const textlink = (text, link='', pos) => {return (
+			<h1 className={`githubio${pos}`} align="center">
 				<a
 				target="_blank"
 				rel="noreferrer"
-				class="underline"
-				href="https://github.com/byun-sungwoo">
-					github/byun-sungwoo
+				className="underline"
+				href={link}>
+					{text}
 				</a>
 			</h1>
-		</div>
-	);
+		)}
+		const links = () => {return (
+			<div>
+				{/* {textlink("another thing",'',3)}
+				{textlink("yeah boi",'',2)} */}
+				{textlink("github/byun-sungwoo", "https://github.com/byun-sungwoo",1)}
+			</div>
+		)}
+
+		const animation = () => {
+			return (
+				<div
+				style={{margin: '0', height: '100vh', overflow: 'hidden', backgroundColor: 'red'}}
+				onClick={() => {this.setState({intro: !intro})}}
+				>
+					<div>hi</div>
+					{links()}
+				</div>
+			)
+		}
+		return (
+			<div>
+				{!intro
+				? animation()
+				: <Resize />
+				}
+				{links()}
+			</div>
+		);
+	}
 }
-export default App;

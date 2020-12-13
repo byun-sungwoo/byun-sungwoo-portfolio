@@ -3,6 +3,24 @@ body {
 	height: 100vh;
 	overflow: hidden;
 }
+
+/* .fullpage-wrapper {
+width: 100%!important;
+transform: none!important;
+} */
+
+/* .fp-section {
+	transform: translateX(100%);
+	opacity: 0;
+	transition: transform .66s cubic-bezier(0.16, 0.68, 0.43, 0.99),
+				opacity .66s ease-in-out;
+} */
+
+/* .fp-section.active {
+	transform: translateX(0);
+	opacity: 1;
+} */
+
 canvas {
 	display: block;
 }
@@ -10,18 +28,31 @@ span{
 	background: white !important;
 }
 
-.githubio {
+.githubio1 {
 	position: absolute;
 	color: white;
 	font-size: 1.25em;
 	bottom: .5em;
 	left: 1em;
 }
-
-/* @import url(https://fonts.googleapis.com/css?family=Dosis:300,400); */
+.githubio2 {
+	position: absolute;
+	color: white;
+	font-size: 1.25em;
+	bottom: 2.2em;
+	left: 1em;
+}
+.githubio3 {
+	position: absolute;
+	color: white;
+	font-size: 1.25em;
+	bottom: 3.9em;
+	left: 1em;
+}
 
 h1 a {
 	color: #fff;
+	opacity: .25;
 	font-size: 1em;
 	text-decoration: none;
 	/* display: inline-block;
@@ -29,7 +60,11 @@ h1 a {
 	font-family: 'Dosis', sans-serif;
 }
 
-/*effect-underline*/
+h1 a:hover {
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+
 a.underline:after {
 	content: '';
 	position: absolute;
