@@ -22,6 +22,7 @@ export default class Intro extends Component {
 		// }
 		const image1 = () => (
 			<img
+			className='mountain'
 			alt='mountain'
 			onLoad={this.handleImageLoaded}
 			style={{
@@ -38,7 +39,7 @@ export default class Intro extends Component {
 			style= {{
 				width: '100%',
 				height: '100%',
-				backgroundColor: 'black',
+				backgroundColor: '#1A1C1E',
 				position: 'absolute',
 				display: 'flex',
 				alignItems: 'center',
