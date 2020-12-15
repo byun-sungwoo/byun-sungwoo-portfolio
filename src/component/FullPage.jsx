@@ -7,7 +7,7 @@ export default class FullPage extends Component {
 	constructor() {
 		super();
 		this.state = {
-			sectionsColor: ['#0f1011', '#0f1011', '#0f1011', '#0f1011'],
+			sectionsColor: ['#0f1011', '#0f1011', '#0f1011', '#0f1011']
 		}
 		this.pageTwo = React.createRef();
 	}
@@ -37,24 +37,26 @@ export default class FullPage extends Component {
 		return (
 			<ReactFullpage
 			scrollingSpeed = {1000}
+			anchors={['intro', 'section1', 'section2', 'section3']}
 			navigation={true}
 			sectionsColor={this.state.sectionsColor}
 			width={window.innerWidth}
 			height={window.innerHeight}
 
 			render={({ state, fullpageApi }) => {
+				// this.setState({activeSlide: fullpageApi && fullpageApi.getActiveSection().index});
 				return (
 					<ReactFullpage.Wrapper>
-					<div className="section">
+					<div data-anchor="intro" className="section">
 						<div style={{position: 'relative'}}>
-							<Intro moveTo={(page) => fullpageApi.moveTo(page)}/>
+							<Intro slideIndex={0} moveTo={(page) => fullpageApi.moveTo(page)}/>
 							<Board
 							colorStart={colorRange[0]}
 							colorEnd={colorRange[1]}
 							action="flip-right" style={{position:'absolute'}}/>
 						</div>
 					</div>
-					<div id='section2' className="section" ref={this.pageTwo}>
+					<div data-anchor="section1" id='section2' className="section" ref={this.pageTwo}>
 						<div style={{position: 'relative'}}>
 							{/* <div style={{right: '1em', top: '1em', position:'absolute', color:'#101011', fontSize:'50px'}}>Push</div> */}
 							<Board
@@ -64,7 +66,7 @@ export default class FullPage extends Component {
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
-					<div className="section">
+					<div data-anchor="section2" className="section">
 						<div style={{position: 'relative'}}>
 							{/* <div style={{right: '1em', top: '1em', position:'absolute', color:'#101011', fontSize:'50px'}}>Pull</div> */}
 							<Board
@@ -74,7 +76,7 @@ export default class FullPage extends Component {
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
-					<div className="section">
+					<div data-anchor="section3" className="section">
 						<div style={{position: 'relative'}}>
 							{/* <div style={{right: '1em', top: '1em', position:'absolute', color:'#101011', fontSize:'50px'}}>Flip-Down</div> */}
 							<Board
