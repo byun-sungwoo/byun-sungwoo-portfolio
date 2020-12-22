@@ -1,0 +1,36 @@
+table {
+	width: 50%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+	border-radius:6px;
+	-moz-border-radius:6px;
+}
+
+th, td {
+	padding: 15px;
+	background-color: rgba(36, 36, 36, 0.9);
+	color: #fff;
+}
+
+td {
+	padding: 0;
+	padding-left: 15px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: .5em;
+}
+
+td:hover {
+	background-color: rgba(100, 100, 100, 0.9);
+	transition: background-color 0.5s, transform 0.5s;
+}
+
+th {
+	text-align: left;
+}
+
+thead, th {
+	/* background-color: #5AF1B8; */
+	background-color: rgb(20, 20, 20);
+}

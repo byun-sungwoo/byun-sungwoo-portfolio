@@ -89,10 +89,10 @@ export default class Board extends Component {
 				// intersects[i].object.material.color.set('#1ED760');
 				let tl1 = new TimelineMax();
 				if(action !== undefined && action !== null && action === 'pull') {
-					tl1.to(intersects[i].object.position, 1, {z: -4.25, ease: Expo.easeOut});
+					tl1.to(intersects[i].object.position, 1, {z: -4.5, ease: Expo.easeOut});
 					tl1.to(intersects[i].object.position, 1, {z: -5, ease: Expo.easeOut});
 				} else if(action !== undefined && action !== null && action === 'push') {
-					tl1.to(intersects[i].object.position, 1, {z: -5.75, ease: Expo.easeOut});
+					tl1.to(intersects[i].object.position, 1, {z: -5.5, ease: Expo.easeOut});
 					tl1.to(intersects[i].object.position, 1, {z: -5, ease: Expo.easeOut});
 				} else if(action !== undefined && action !== null && action === 'flip-right') {
 					tl1.to(intersects[i].object.rotation, 1.5, {y: Math.PI*.5, ease: Expo.easeOut});
@@ -141,6 +141,7 @@ export default class Board extends Component {
 				style={{
 					// width: "200px",
 					// height: "200px",
+					overflow: 'hidden',
 					margin: '0',
 					height: '100vh'
 				}}

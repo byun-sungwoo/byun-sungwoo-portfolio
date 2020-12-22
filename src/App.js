@@ -24,9 +24,7 @@ export default class App extends Component {
 			</h1>
 		)}
 		const links = () => {return (
-			<div>
-				{/* {textlink("another thing",'',3)}
-				{textlink("yeah boi",'',2)} */}
+			<div style={{position: 'fixed', whiteSpace: 'nowrap', bottom: '0'}}>
 				{textlink("github/byun-sungwoo", "https://github.com/byun-sungwoo",1)}
 			</div>
 		)}
@@ -43,7 +41,7 @@ export default class App extends Component {
 			)
 		}
 		return (
-			<div>
+			<div style={{width:"100%", height:"100%"}}>
 				{!intro
 				? animation()
 				: <Resize />

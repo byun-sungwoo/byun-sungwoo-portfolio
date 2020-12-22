@@ -1,0 +1,16 @@
+.boxes {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #72F1B8;
+	/* overflow: hidden; */
+	height: 200px;
+	max-height: 35vh;
+	/* box-shadow: 0px 12px 198px -6px rgba(0, 0, 0, 0.3); */
+	border-radius: 10px 10px 10px 10px;
+	text-align: center;
+}
+
+.grids {
+	max-width: 50%;
+	margin: auto;
+}

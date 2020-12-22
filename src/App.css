@@ -1,8 +1,9 @@
 body {
 	margin: 0;
 	height: 100vh;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
+.element::-webkit-scrollbar { width: 0 !important }
 
 /* .fullpage-wrapper {
 width: 100%!important;
@@ -85,4 +86,15 @@ a.underline:hover:after {
 	opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+	background-color: #17191A;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: white;
+	border-radius: 10px;
 }

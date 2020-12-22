@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import MountainJPG from '../image/mountain2.png';
-import './Intro.css';
+import '../css/Intro.css';
 
 export default class Intro extends Component {
 	constructor(props) {

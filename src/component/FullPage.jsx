@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Board from './Board';
 import Intro from './Intro';
+import About from './About';
+import Experience from './Experience';
+import Ending from './Ending';
+import Projects from './Projects';
+import '../css/Intro.css';
+// import Scroll from './Scroll';
 
 export default class FullPage extends Component {
 	constructor() {
@@ -37,11 +43,13 @@ export default class FullPage extends Component {
 		return (
 			<ReactFullpage
 			scrollingSpeed = {1000}
-			anchors={['intro', 'section1', 'section2', 'section3']}
+			anchors={['intro', 'about', 'experience', 'projects', 'ending']}
 			navigation={true}
 			sectionsColor={this.state.sectionsColor}
 			width={window.innerWidth}
 			height={window.innerHeight}
+			scrollBar={true}
+			animateAnchor={false}
 
 			render={({ state, fullpageApi }) => {
 				// this.setState({activeSlide: fullpageApi && fullpageApi.getActiveSection().index});
@@ -56,9 +64,10 @@ export default class FullPage extends Component {
 							action="flip-right" style={{position:'absolute'}}/>
 						</div>
 					</div>
-					<div data-anchor="section1" id='section2' className="section" ref={this.pageTwo}>
+					<div data-anchor="s1" className="section" ref={this.pageTwo}>
 						<div style={{position: 'relative'}}>
 							{/* <div style={{right: '1em', top: '1em', position:'absolute', color:'#101011', fontSize:'50px'}}>Push</div> */}
+							<About />
 							<Board
 							colorStart={colorRange[1]}
 							colorEnd={colorRange[2]}
@@ -66,9 +75,9 @@ export default class FullPage extends Component {
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
-					<div data-anchor="section2" className="section">
+					<div data-anchor="s2" className="section">
 						<div style={{position: 'relative'}}>
-							{/* <div style={{right: '1em', top: '1em', position:'absolute', color:'#101011', fontSize:'50px'}}>Pull</div> */}
+							<Experience />
 							<Board
 							colorStart={colorRange[2]}
 							colorEnd={colorRange[3]}
@@ -76,9 +85,19 @@ export default class FullPage extends Component {
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
-					<div data-anchor="section3" className="section">
+					<div data-anchor="s3" className="section">
 						<div style={{position: 'relative'}}>
-							{/* <div style={{right: '1em', top: '1em', position:'absolute', color:'#101011', fontSize:'50px'}}>Flip-Down</div> */}
+							<Projects />
+							<Board
+							colorStart={colorRange[2]}
+							colorEnd={colorRange[3]}
+							action="flip"
+							style={{position:'absolute'}}/>
+						</div>
+					</div>
+					<div data-anchor="s4" className="section">
+						<div style={{position: 'relative'}}>
+							<Ending moveTo={(page) => fullpageApi.moveTo(page)}/>
 							<Board
 							colorStart={colorRange[3]}
 							colorEnd={colorRange[4]}
