@@ -32,23 +32,23 @@ span{
 .githubio1 {
 	position: absolute;
 	color: white;
-	font-size: 1.25em;
-	bottom: .5em;
-	left: 1em;
+	font-size: 2vh;
+	bottom: 1vh;
+	left: 2vh;
 }
 .githubio2 {
 	position: absolute;
 	color: white;
-	font-size: 1.25em;
-	bottom: 2.2em;
-	left: 1em;
+	font-size: 2vh;
+	bottom: 1vh;
+	left: 2vh;
 }
 .githubio3 {
 	position: absolute;
 	color: white;
-	font-size: 1.25em;
-	bottom: 3.9em;
-	left: 1em;
+	font-size: 2vh;
+	bottom: 1vh;
+	left: 2vh;
 }
 
 h1 a {

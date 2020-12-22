@@ -16,10 +16,6 @@ export default class Intro extends Component {
 	}
 
 	render() {
-		// console.log(document.URL.includes('#intro'))
-		// if(this.props.slideIndex !== this.props.key) {
-		// 	return (<div>huh</div>)
-		// }
 		const image1 = () => (
 			<img
 			className='mountain'
@@ -29,7 +25,6 @@ export default class Intro extends Component {
 				position: 'absolute',
 				objectFit: 'cover',
 				width: '100%',
-				// height: '50%',
 			}}
 			src={MountainJPG}
 			/>
@@ -61,9 +56,9 @@ export default class Intro extends Component {
 				<div style={{color:'white', position:'absolute'}}>
 					<div
 					style={{
-						marginLeft: '0.5em',
-						marginTop: '2em',
-						fontSize:'5em',
+						marginLeft: '5vh',
+						marginTop: '20vh',
+						fontSize:'8vh',
 						fontFamily: "sans-serif",
 						opacity: '80%',
 						fontWeight: 'bold'

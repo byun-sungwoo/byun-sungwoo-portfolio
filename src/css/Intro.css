@@ -2,11 +2,11 @@
 	border: 2px solid white;
 	background-color : transparent;
 	color: white;
-	padding: 14px 28px;
-	font-size: 16px;
+	padding: 1.75vh 3.5vh;
+	font-size: 2vh;
 	cursor: pointer;
-	border-radius: 4px;
-	margin-right: 20px;
+	border-radius: .5vh;
+	margin-right: 2.5vh;
 	animation: fadeFromLeft 2.5s 1;
 	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
@@ -16,11 +16,11 @@
 	border: 2px solid white;
 	background-color : transparent;
 	color: white;
-	padding: 14px 28px;
-	font-size: 16px;
+	padding: 1.75vh 3.5vh;
+	font-size: 2vh;
 	cursor: pointer;
-	border-radius: 4px;
-	margin-right: 20px;
+	border-radius: .5vh;
+	margin-right: 2.5vh;
 }
 
 .navButton:hover {

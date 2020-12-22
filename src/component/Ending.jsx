@@ -43,7 +43,7 @@ const Ending = (props) => {
 		}}>
 			<div style={{position: 'fixed', whiteSpace: 'nowrap', top: '2em', right:'2em'}}>
 				<div className='homeIcon' onClick={() => props.moveTo(1)}>
-					<HomeIcon style={{color: 'white'}}/>
+					<HomeIcon className='iconImage' style={{color: 'white', fontSize:'4vh', padding:'1vh'}}/>
 				</div>
 			</div>
 			<div style={{marginLeft: '2.25em', marginTop: '5%'}}>
