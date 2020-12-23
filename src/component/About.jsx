@@ -82,15 +82,15 @@ const About = () => {
 								<th>Databases</th>
 							</tr>
 						</thead>
-						<tr><td>Java</td><td>React</td><td>PostgreSQL</td></tr>
-						<tr><td>JavaScript</td><td>ASP.NET</td><td>MySQL</td></tr>
-						<tr><td>C</td><td>Spring</td><td></td></tr>
-						<tr><td>Ruby</td><td>Rails</td><td></td></tr>
-						<tr><td>Python</td><td></td><td></td></tr>
-						<tr><td>C#</td><td></td><td></td></tr>
-						<tr><td>C++</td><td></td><td></td></tr>
-						<tr><td>Shell</td><td></td><td></td></tr>
-						<tr><td>R</td><td></td><td></td></tr>
+						<tr><td>Java</td>		<td>React</td>		<td>PostgreSQL</td>	</tr>
+						<tr><td>JavaScript</td>	<td>ASP.NET</td>	<td>MySQL</td>		</tr>
+						<tr><td>C</td>			<td>Spring</td>		<td id="noCursor"/>	</tr>
+						<tr><td>Ruby</td>		<td>Rails</td>		<td id="noCursor"/>	</tr>
+						<tr><td>Python</td>		<td id="noCursor"/>	<td id="noCursor"/>	</tr>
+						<tr><td>C#</td>			<td id="noCursor"/>	<td id="noCursor"/>	</tr>
+						<tr><td>C++</td>		<td id="noCursor"/>	<td id="noCursor"/>	</tr>
+						<tr><td>Shell</td>		<td id="noCursor"/>	<td id="noCursor"/>	</tr>
+						<tr><td>R</td>			<td id="noCursor"/>	<td id="noCursor"/>	</tr>
 					</table>
 				</div>
 			</div>

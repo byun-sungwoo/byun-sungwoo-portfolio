@@ -1,0 +1,65 @@
+.homeIcon {
+	width: 6vh;
+	height: 6vh;
+	cursor: pointer;
+	border-radius: 50%;
+	opacity: .5;
+	background-color: rgba(255,255,255,.25);
+}
+
+.homeIcon:hover {
+	background-color: rgba(255,255,255,.4);
+	transition: background-color 0.5s, transform 0.5s;
+	opacity: 1;
+	transition: opacity .5s;
+}
+
+.homeIcon:active {
+	transition-duration: .1s;
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+}
+
+.formInput, .formBody {
+	width: 80vh;
+	font-weight: bold;
+	font-size: 2vh;
+	border-radius: 4px;
+	background-color: rgba(0, 0, 0, .8);
+	color: white;
+	outline: none;
+	border: none;
+	padding: 1vh;
+}
+
+.formBody {
+	height: 20vh;
+	resize: vertical;
+	max-height: 40vh;
+	min-height: 20vh;
+}
+
+.formSubmit {
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 2vh;
+	background-color: rgba(0, 0, 0, .8);
+	color: rgba(255, 255, 255, .5);
+	outline: none;
+	border: none;
+	padding: 1vh;
+	padding-left: 3vh;
+	padding-right: 3vh;
+}
+
+.formSubmit:hover {
+	color: rgba(255, 255, 255, 1);
+	transition: color 1s;
+}
+
+.formSubmit:active {
+	transition-duration: .1s;
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+}

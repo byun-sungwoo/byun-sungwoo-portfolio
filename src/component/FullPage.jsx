@@ -4,7 +4,7 @@ import Board from './Board';
 import Intro from './Intro';
 import About from './About';
 import Experience from './Experience';
-import Ending from './Ending';
+import Ending from './Contact';
 import Projects from './Projects';
 import '../css/Intro.css';
 // import Scroll from './Scroll';
@@ -43,7 +43,7 @@ export default class FullPage extends Component {
 		return (
 			<ReactFullpage
 			scrollingSpeed = {1000}
-			anchors={['intro', 'about', 'experience', 'projects', 'ending']}
+			anchors={['intro', 'about', 'experience', 'projects', 'contact']}
 			navigation={true}
 			sectionsColor={this.state.sectionsColor}
 			width={window.innerWidth}
@@ -61,7 +61,7 @@ export default class FullPage extends Component {
 							<Board
 							colorStart={colorRange[0]}
 							colorEnd={colorRange[1]}
-							action="flip-right" style={{position:'absolute'}}/>
+							action="flip" style={{position:'absolute'}}/>
 						</div>
 					</div>
 					<div data-anchor="s1" className="section" ref={this.pageTwo}>
@@ -71,7 +71,7 @@ export default class FullPage extends Component {
 							<Board
 							colorStart={colorRange[1]}
 							colorEnd={colorRange[2]}
-							action="push"
+							action="flip-right"
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
@@ -91,7 +91,7 @@ export default class FullPage extends Component {
 							<Board
 							colorStart={colorRange[2]}
 							colorEnd={colorRange[3]}
-							action="flip"
+							action="flip-right"
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
@@ -101,7 +101,7 @@ export default class FullPage extends Component {
 							<Board
 							colorStart={colorRange[3]}
 							colorEnd={colorRange[4]}
-							action="pull"
+							action="flip"
 							style={{position:'absolute'}}/>
 						</div>
 					</div>
