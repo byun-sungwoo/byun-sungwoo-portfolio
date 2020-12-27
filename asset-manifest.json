@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/byun-sungwoo-portfolio/static/css/main.23e3967f.chunk.css",
-    "main.js": "/byun-sungwoo-portfolio/static/js/main.87492676.chunk.js",
-    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.87492676.chunk.js.map",
+    "main.js": "/byun-sungwoo-portfolio/static/js/main.9f3e8bcf.chunk.js",
+    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.9f3e8bcf.chunk.js.map",
     "runtime-main.js": "/byun-sungwoo-portfolio/static/js/runtime-main.f98be86a.js",
     "runtime-main.js.map": "/byun-sungwoo-portfolio/static/js/runtime-main.f98be86a.js.map",
     "static/css/2.ec02d681.chunk.css": "/byun-sungwoo-portfolio/static/css/2.ec02d681.chunk.css",
@@ -14,19 +14,19 @@
     "static/css/2.ec02d681.chunk.css.map": "/byun-sungwoo-portfolio/static/css/2.ec02d681.chunk.css.map",
     "static/css/main.23e3967f.chunk.css.map": "/byun-sungwoo-portfolio/static/css/main.23e3967f.chunk.css.map",
     "static/js/2.f8c5641a.chunk.js.LICENSE.txt": "/byun-sungwoo-portfolio/static/js/2.f8c5641a.chunk.js.LICENSE.txt",
+    "static/media/contact10.7da9291e.png": "/byun-sungwoo-portfolio/static/media/contact10.7da9291e.png",
+    "static/media/contact7.87bdfd0a.png": "/byun-sungwoo-portfolio/static/media/contact7.87bdfd0a.png",
+    "static/media/exp2.9f2089bf.png": "/byun-sungwoo-portfolio/static/media/exp2.9f2089bf.png",
+    "static/media/exp3.67eeab65.png": "/byun-sungwoo-portfolio/static/media/exp3.67eeab65.png",
     "static/media/img1.857c3ed1.png": "/byun-sungwoo-portfolio/static/media/img1.857c3ed1.png",
     "static/media/img1.ade37db4.jpg": "/byun-sungwoo-portfolio/static/media/img1.ade37db4.jpg",
-    "static/media/wall2.cc8af3c3.png": "/byun-sungwoo-portfolio/static/media/wall2.cc8af3c3.png",
-    "static/media/wall4.af644ab8.png": "/byun-sungwoo-portfolio/static/media/wall4.af644ab8.png",
-    "static/media/wall5.b95fd934.png": "/byun-sungwoo-portfolio/static/media/wall5.b95fd934.png",
-    "static/media/wall6.18e02c92.png": "/byun-sungwoo-portfolio/static/media/wall6.18e02c92.png",
-    "static/media/wall7.87da7dcd.png": "/byun-sungwoo-portfolio/static/media/wall7.87da7dcd.png"
+    "static/media/mountain2.40a35e0f.png": "/byun-sungwoo-portfolio/static/media/mountain2.40a35e0f.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f98be86a.js",
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.f8c5641a.chunk.js",
     "static/css/main.23e3967f.chunk.css",
-    "static/js/main.87492676.chunk.js"
+    "static/js/main.9f3e8bcf.chunk.js"
   ]
 }
