@@ -1,0 +1,186 @@
+.projects, .projectContent {
+	font-size: 4vh;
+	display: inline-block;
+}
+
+.projectContent {
+	font-size: 2em;
+	padding: 2vh;
+	position: absolute;
+	left: 40%;
+	width: 50vw;
+	height: 70vh;
+	background-color: rgba(0, 0, 0, .8);
+	border-radius: 1vh;
+	color: rgba(255, 255, 255, .9);
+}
+
+#selected {
+	opacity: .8;
+	border: .25vh solid white;
+}
+
+.project .title {
+	display: inline-block;
+	border: .25vh solid transparent;
+	margin-top: 6vh;
+	margin-left: 10vw;
+	user-select: none;
+	padding: 1vh;
+	opacity: .6;
+	border-radius: 1vh;
+}
+
+h1 {
+	font-size: 4vh;
+}
+
+.project .title:hover {
+	background-color: rgba(255,255,255, .25);
+	border: .25vh solid rgba(255,255,255, .25);
+	cursor: pointer;
+	transition: background-color .25s ease-out, border .25s ease-out;
+}
+
+.project .title:active {
+	cursor: pointer;
+	-webkit-transform: scale(.95);
+	transform: scale(.95);
+}
+
+@keyframes fadeFromLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.githubLink {
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	bottom: 2vh;
+	right: 2vh;
+	position: 'fixed';
+	white-space: 'nowrap';
+	color: #fff;
+	opacity: .5;
+	font-size: 2.5vh;
+	text-decoration: none;
+	font-family: 'Dosis', sans-serif;
+}
+
+.githubLink:hover {
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+
+.githubLink:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	height: 1em;
+	width: 100%;
+	border-bottom: 1px solid;
+	margin-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.githubLink:hover:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.githubLink #githubIcon {
+	pointer-events: none;
+	font-size: 3vh;
+	opacity: 0;
+	position: absolute;
+	bottom: 2.5vh;
+	right: 45%;
+}
+
+.githubLink:hover #githubIcon {
+	opacity: 1;
+	transform: opacity 2s;
+	animation: bobbing 1s ease-out infinite;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+}
+
+.githubLink:active {
+	color: darkgray;
+}
+
+.githubLink2 {
+	margin-top: 1.5vh;
+	margin-right: 1vw;
+	color: white;
+	font-weight: bold;
+	display: inline-block;
+	white-space: 'nowrap';
+	color: #fff;
+	opacity: .5;
+	font-size: 2.5vh;
+	text-decoration: none;
+	font-family: 'Dosis', sans-serif;
+	line-height: 1vh;
+}
+
+.githubLink2:hover {
+	opacity: 1;
+	transition: opacity 1.5s;
+}
+
+.githubLink2:after {
+	display: inline-block;
+	content: '';
+	height: 2px;
+	bottom: -4px;
+	width: 100%;
+	background: white;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+.githubLink2:hover:after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+.githubLink2 #githubIcon2 {
+	display: inline-block;
+	margin-right: 1vh;
+	pointer-events: none;
+	font-size: 3vh;
+	opacity: 0;
+}
+
+.githubLink2:hover #githubIcon2 {
+	opacity: 1;
+	transform: opacity 2s;
+	animation: bobbing 1s ease-out infinite;
+	animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+}
+
+.githubLink2:active {
+	color: darkgray;
+}
+
+h3 {
+	line-height: 0;
+}

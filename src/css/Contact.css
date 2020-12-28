@@ -4,7 +4,7 @@
 	cursor: pointer;
 	border-radius: 50%;
 	opacity: .5;
-	background-color: rgba(255,255,255,.25);
+	background-color: rgba(255,255,255,.5);
 }
 
 .homeIcon:hover {
@@ -55,7 +55,7 @@
 
 .formSubmit:hover {
 	color: rgba(255, 255, 255, 1);
-	transition: color 1s;
+	transition: color .25s;
 }
 
 .formSubmit:active {

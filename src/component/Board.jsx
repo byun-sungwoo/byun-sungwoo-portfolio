@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
-
 import * as THREE from 'three';
 import { Expo, TimelineMax } from "gsap";
-// import { FontLoader } from 'three';
 
-// props.action is "flip", "push", "pull"
 export default class Board extends Component {
 	constructor(props) {
 		super(props);
@@ -47,7 +44,7 @@ export default class Board extends Component {
 		let mouse = new THREE.Vector2();
 
 		// Adding Cube
-		let geometry = new THREE.BoxGeometry(1, 1, 1);
+		let geometry = new THREE.BoxGeometry(1.1, 1, 1);
 		for (let i = -20; i <= 20; i++) {
 			let material;
 			let mesh;
@@ -139,8 +136,6 @@ export default class Board extends Component {
 		return (
 			<div
 				style={{
-					// width: "200px",
-					// height: "200px",
 					overflow: 'hidden',
 					margin: '0',
 					height: '100vh'

@@ -19,7 +19,6 @@ const Scroll = () => {
 					data-aos-once="false"
 				>1</div>
 				<div
-					// data-aos-anchor
 					className="boxes"
 					data-aos="fade-right"
 					data-aos-duration="1200"

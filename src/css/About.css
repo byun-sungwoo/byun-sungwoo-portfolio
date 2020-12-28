@@ -5,10 +5,11 @@
 table {
 	width: 50%;
 	border-collapse: collapse;
+	border-spacing: 0;
 	overflow: hidden;
 	box-shadow: 0 0 20px rgba(0,0,0,0.1);
-	border-radius:6px;
-	-moz-border-radius:6px;
+	border-radius:.75vh;
+	-moz-border-radius:.75vh;
 }
 
 th, td {
@@ -18,8 +19,6 @@ th, td {
 }
 
 td {
-	padding: 0;
-	padding-left: 15px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	font-size: .5em;
@@ -35,6 +34,5 @@ th {
 }
 
 thead, th {
-	/* background-color: #5AF1B8; */
 	background-color: rgb(20, 20, 20);
 }

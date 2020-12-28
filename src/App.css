@@ -12,7 +12,7 @@ span{
 }
 
 .infoIcon {
-	color: rgba(255, 255, 255, .25);
+	color: rgba(255, 255, 255, .5);
 	position: absolute;
 	left: 2vh;
 	bottom: 1.5vh;
@@ -35,7 +35,7 @@ span{
 }
 
 .infoText {
-	color: rgba(255, 255, 255, .8);
+	color: rgba(255, 255, 255, 1);
 	border: 1px solid transparent;
 	position: relative;
 	display: inline-block;
@@ -79,7 +79,7 @@ span{
 
 h1 a {
 	color: #fff;
-	opacity: .25;
+	opacity: .5;
 	font-size: 1em;
 	text-decoration: none;
 	font-family: 'Dosis', sans-serif;
@@ -139,6 +139,10 @@ a.underline:hover #underlineIcon {
 	animation: bobbing 1s ease-out infinite;
 	animation-timing-function: ease-out;
 	-webkit-animation-timing-function: ease-out;
+}
+
+a.underline:active {
+	color: darkgray;
 }
 
 ::-webkit-scrollbar {

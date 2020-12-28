@@ -5,6 +5,7 @@
 	color: white;
 	padding: 1.75vh 3.5vh;
 	font-size: 2vh;
+	font-weight: bold;
 	cursor: pointer;
 	border-radius: .5vh;
 	margin-right: 2.5vh;
@@ -25,8 +26,8 @@
 }
 
 .navButton:hover {
-	background-color : rgba(255, 255, 255, 0.25);
-	transition: background-color 0.5s, transform 0.5s;
+	background-color : rgba(255, 255, 255, 0.5);
+	transition: background-color 1s, transform 0.5s;
 }
 
 .navButton:active {

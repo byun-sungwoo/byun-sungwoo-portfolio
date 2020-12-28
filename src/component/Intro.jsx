@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import MountainJPG from '../image/mountain2.png';
+import MountainJPG from '../image/intro.png';
 import '../css/Intro.css';
 
 export default class Intro extends Component {
@@ -25,6 +25,7 @@ export default class Intro extends Component {
 				position: 'absolute',
 				objectFit: 'cover',
 				width: '100%',
+				top: '0',
 			}}
 			src={MountainJPG}
 			/>
@@ -51,23 +52,23 @@ export default class Intro extends Component {
 			</div>
 		)}
 		return (
-			<div style={{position:"absolute", width:'100%', height:'100%'}}>
+			<div style={{position:"absolute", width:'100%', height:'100%', overflow:'hidden'}}>
 				{image1()}
 				<div style={{color:'white', position:'absolute'}}>
 					<div
 					style={{
 						marginLeft: '5vh',
-						marginTop: '20vh',
+						marginTop: '55vh',
 						fontSize:'8vh',
 						fontFamily: "sans-serif",
-						opacity: '80%',
-						fontWeight: 'bold'
+						fontWeight: 'bold',
 					}}>
 						<div className='introText'>
-							Hi,<br/>
-							I'm Daniel.<br/>
-							software engineer<br/>
+							Hi,<br/>I'm Daniel Byun<br/>
+							<div style={{textAlign:'right', fontSize:'.5em'}}>software engineer</div><br/>
 						</div>
+					</div>
+					<div style={{marginLeft:'5vh', marginTop:'-6vh'}}>
 						<button className="navButton" onClick={() => this.props.moveTo(2)}>
 							ABOUT ME
 						</button>

@@ -1,11 +1,12 @@
 import React, { useEffect } from 'react';
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ocean from '../image/contact6.png';
+import Background from '../image/contact.png';
 import "../css/About.css";
 import "../css/Contact.css";
 import SvgIcon from '@material-ui/core/SvgIcon';
 import EmailIcon from '@material-ui/icons/Email';
+import '../css/Intro.css';
 
 function HomeIcon(props) {
 	return (
@@ -39,18 +40,42 @@ const Ending = (props) => {
 	useEffect(() => {
 		Aos.init({duration: 2000});
 	}, [])
+	const [imageLoaded1, setImageLoaded1] = React.useState(false);
+	const setImage1True = React.useCallback(() => setImageLoaded1(true),[],);
 	const image1 = () => (
 		<img
 		alt='profile'
+		onLoad={setImage1True}
 		style={{
 			position: 'absolute',
 			objectFit: 'cover',
 			width: '100%',
-			bottom: 0,
+			bottom: '0',
 		}}
-		src={ocean}
+		src={Background}
 		/>
 	)
+	if(!imageLoaded1) {return (
+		<div
+		style= {{
+			width: '100%',
+			height: '100%',
+			backgroundColor: '#1A1C1E',
+			position: 'absolute',
+			display: 'flex',
+			alignItems: 'center',
+			justifyContent: 'center',
+			flexDirection: 'column',
+		}}
+		>
+			<div className='loader'>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div hidden={true}>{image1()}</div>
+		</div>
+	)}
 	let delay = 1000;
 	return (
 		<div
@@ -73,17 +98,16 @@ const Ending = (props) => {
 			<div style={{marginLeft: '2.25em', marginTop: '5%'}}>
 				<div
 				style={{
-					marginLeft: '20vw',
+					marginLeft: '14vw',
 					marginTop:'1em',
 					fontSize: '8vh',
 					fontWeight: 'bold',
-					opacity: '80%'
 				}}
 				>
 					<div style={{textAlign: 'center', marginRight:'79.5vh', marginTop: '20vh'}} data-aos="fade-in" data-aos-easing="ease-out" data-aos-duration="5000">
 						Contact Me<br/>
 					</div>
-					<div style={{textAlign: 'center', marginRight: '40vh', marginTop: '2em', fontSize: '0.25em', fontWeight: 'bold', lineHeight: '1.5em'}}>
+					<div style={{opacity:'80%', textAlign: 'center', marginRight: '40vh', marginTop: '2em', fontSize: '0.25em', fontWeight: 'bold', lineHeight: '1.5em'}}>
 						<form action="mailto:dsbyun813@gmail.com" method="GET">
 							<div data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+0}>
 								<input className="formInput" name="subject" placeholder="subject..." type="text" required/>
