@@ -72,7 +72,7 @@ const Experience = () => {
 					<div data-aos="fade-in" data-aos-easing="ease-out" data-aos-duration="5000">
 						Experience<br/>
 					</div>
-					<div style={{marginLeft: '0vw', marginTop: '2em', fontSize: '0.25em', fontWeight: 'bold', lineHeight: '1.5em'}}>
+					<div style={{opacity:'.9', marginLeft: '0vw', marginTop: '2em', fontSize: '0.25em', fontWeight: 'bold', lineHeight: '1.5em'}}>
 						<div data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+600}>
 						Aug 2019 - Present<br/>Undergraduate Instructor at Indiana University Bloomington
 						<ul>
@@ -81,38 +81,50 @@ const Experience = () => {
 							<li>Cover lectures in absence of professor.</li>
 						</ul>
 						</div><br/>
-						<div style={{marginLeft:'2vh', lineHeight:'.75vh'}}>
+						<div style={{marginLeft:'2vh'}}>
 						<div className='timeline'>
-							<div className='button' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
-								<div className='text'>
-								{'>'} Operating system interfaces and modern object-oriented programming using Java.
-								</div>
-								<div className='title'>
-								Aug 2019 – Dec 2019 | Software Systems
-								</div>
-							</div>
-							<div className='button' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+400}>
-								<div className='text'>
-								{'>'} Operating system interfaces and modern object-oriented programming using Java.
-								</div>
-								<div className='title'>
-								Jan 2020 – May 2020 | Software Systems Honors
+							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+								<div className='button'/>
+								<div className='content'>
+									<div className='title'>
+										Aug 2019 – Dec 2019 | Software Systems
+									</div>
+									<div className='text'>
+										{'>'} Operating system interfaces and modern object-oriented programming using Java.
+									</div>
 								</div>
 							</div>
-							<div className='button' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+600}>
-								<div className='text'>
-								{'>'} Maintain a fully functional website primarily using HTML, Perl, Apache, and MySQL.
-								</div>
-								<div className='title'>
-								Jan 2020 - May 2020 | Mastering the World Wide Web
+							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+								<div className='button'/>
+								<div className='content'>
+									<div className='title'>
+										Jan 2020 – May 2020 | Software Systems Honors
+									</div>
+									<div className='text'>
+										{'>'} Operating system interfaces and modern object-oriented programming using Java.
+									</div>
 								</div>
 							</div>
-							<div className='button' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+800}>
-								<div className='text'>
-								{'>'} Operating system interfaces and modern object-oriented programming using Java.
+							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+								<div className='button'/>
+								<div className='content'>
+									<div className='title'>
+										Jan 2020 - May 2020 | Mastering the World Wide Web
+									</div>
+									<div className='text'>
+										{'>'} Maintain a fully functional website primarily using HTML, Perl, Apache, and MySQL.
+									</div>
 								</div>
-								<div className='title'>
-								Aug 2020 – Present | Software Systems
+							</div>
+							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+								<div className='button'/>
+								<div className='content'>
+									<div className='title'>
+										Aug 2020 – Present | Software Systems
+									</div>
+									<div className='text'>
+										{'>'} Operating system interfaces and modern object-oriented programming using Java.
+									</div>
 								</div>
 							</div>
 						</div>

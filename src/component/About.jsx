@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import Aos from "aos";
-import "aos/dist/aos.css";
 import Me from '../image/img1.png';
 import Background from '../image/about.png';
 import '../css/Intro.css';
@@ -72,7 +71,7 @@ const About = () => {
 			color: '#fff',
 			fontSize: '1em',
 			textDecoration: 'none',
-			fontFamily: 'Dosis, sans-serif'
+			fontFamily: 'Dosis, sans-serif',
 		}}>
 			{image2()}
 			<div style={{marginLeft: '2.25em', marginTop: '5%'}}>
@@ -93,7 +92,7 @@ const About = () => {
 					<div data-aos="fade-in" data-aos-easing="ease-out" data-aos-duration="5000">
 						About Me<br/>
 					</div>
-					<div style={{marginLeft: '4vw', marginTop: '2em', fontSize: '0.25em', fontWeight: 'bold', lineHeight: '1.5em'}}>
+					<div style={{opacity:'.9', marginLeft: '4vw', marginTop: '2em', fontSize: '0.25em', fontWeight: 'bold', lineHeight: '1.5em'}}>
 						<div data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+600}>
 							Major GPA: 3.68 | Cumulative GPA: 3.54
 						</div><br/>
@@ -115,7 +114,7 @@ const About = () => {
 				fontSize: '8vh',
 			}}>
 				<div style={{fontSize: '.5em'}}>
-					<table style={{marginLeft: 'auto', marginRight: 'auto'}} data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+500}>
+					<table style={{opacity:'.9', marginLeft: 'auto', marginRight: 'auto'}} data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+500}>
 						<thead style={{margin:'1em', fontWeight: 'bold'}}>
 							<tr>
 								<th>Languages</th>

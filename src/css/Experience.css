@@ -1,63 +1,63 @@
-.timeline .button {
-	width: 2.5vh;
-	height: 2.5vh;
-	margin-top: 6vh;
-	border: .75vh solid rgba(255, 255, 255, .50);
+.timeline .container .button {
+	align-content: center;
+	height: 3vh;
+	width: 3vh;
+	display: inline-block;
+	background-color: rgba(255, 255, 255, 0.5);
 	border-radius:50%;
-    -moz-border-radius:50%;
-    -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	margin: 1vh;
+	-webkit-border-radius:50%;
 }
 
-.timeline .button .title {
-	font-size: 2vh;
+.timeline .container {
+	height: max-content;
+	width: max-content;
+	display: flex;
+	margin-bottom: 6vh;
+}
+
+.timeline .container .content {
+	opacity: .8;
+	cursor: default;
 	display: inline-block;
-	padding:2vh;
-	overflow: hidden;
 	white-space: nowrap;
-	margin-left: 4vh;
+	height: 3vh;
+	margin-left: 2vh;
+	padding: 1vh;
+	background-color: rgba(0, 0, 0, .8);
 	border-radius: 1vh;
-	background-color: rgba(0,0,0, .5);
 }
 
-.timeline .button .icon {
-	margin-left: 1.1vh;
-	position: absolute;
-	vertical-align: middle;
-	line-height: 4vh;
-	font-size: 3vh;
-	pointer-events: none;
+.timeline .container .content .title {
+	border-radius: 1vh;
 }
 
-.timeline .button .text {
-	position: absolute;
-	opacity: 0;
-	font-size: 2vh;
+.timeline .container .content .text {
+	font-size: 1.75vh;
+	padding: 1vh;
+	padding-top: 0;
+	display: inline;
 	display: inline-block;
-	padding:2vh;
-	overflow: hidden;
-	white-space: nowrap;
-	margin-left: 4vh;
-	margin-bottom: 4vh;
-	pointer-events: none;
-	border-top-right-radius: 1vh;
+	opacity: 0;
+	transform: translate(-.5vw, .95vh);
+	background-color: rgba(0, 0, 0, .8);
 	border-bottom-left-radius: 1vh;
 	border-bottom-right-radius: 1vh;
 }
 
-.timeline .button:hover {
-	background-color: white;
+.timeline .container:hover .button {
+	background-color: rgb(255, 255, 255);
 }
 
-.timeline .button:hover .title {
-	cursor: default;
-	transform: translate(0, -3.5vh);
-	transition: transform  .25s ease-out, background-color .5s ease-out;
-}
-
-.timeline .button:hover .text {
-	pointer-events:auto;
-	cursor: default;
+.timeline .container:hover .content .text {
 	opacity: 1;
-	background-color: rgba(0,0,0, .5);
-	transition: opacity .5s ease-out;
+	transform: translate(-1vh, .95vh);
+	transition: transform  .5s ease-out, opacity .5s ease-out;
+}
+
+.timeline .container:hover .content {
+	opacity: 1;
+	border-bottom-left-radius: 0;
+	transition: border-bottom-left-radius .5s ease-out, opacity .5s ease-out;
 }

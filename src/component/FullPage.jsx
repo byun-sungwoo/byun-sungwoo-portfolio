@@ -7,7 +7,6 @@ import Experience from './Experience';
 import Ending from './Contact';
 import Projects from './Projects';
 import '../css/Intro.css';
-// import Scroll from './Scroll';
 
 export default class FullPage extends Component {
 	constructor() {
@@ -37,6 +36,8 @@ export default class FullPage extends Component {
 			height={window.innerHeight}
 			scrollBar={true}
 			animateAnchor={false}
+			scrollOverflowOptions={{disablePointer: 'true'}}
+			disablePointer={true}
 
 			render={({ state, fullpageApi }) => {
 				return (

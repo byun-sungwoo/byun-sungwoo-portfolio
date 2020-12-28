@@ -62,6 +62,7 @@ export default class Intro extends Component {
 						fontSize:'8vh',
 						fontFamily: "sans-serif",
 						fontWeight: 'bold',
+						zIndex: '100000',
 					}}>
 						<div className='introText'>
 							Hi,<br/>I'm Daniel Byun<br/>

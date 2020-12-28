@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import Aos from "aos";
-import "aos/dist/aos.css";
 import Background from '../image/contact.png';
-import "../css/About.css";
-import "../css/Contact.css";
 import SvgIcon from '@material-ui/core/SvgIcon';
 import EmailIcon from '@material-ui/icons/Email';
+import "../css/About.css";
+import "../css/Contact.css";
 import '../css/Intro.css';
 
 function HomeIcon(props) {
