@@ -83,7 +83,7 @@ const Experience = () => {
 						</div><br/>
 						<div style={{marginLeft:'2vh'}}>
 						<div className='timeline'>
-							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+							<div className='container' data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
 								<div className='button'/>
 								<div className='content'>
 									<div className='title'>
@@ -94,7 +94,7 @@ const Experience = () => {
 									</div>
 								</div>
 							</div>
-							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+							<div className='container' data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+400}>
 								<div className='button'/>
 								<div className='content'>
 									<div className='title'>
@@ -105,7 +105,7 @@ const Experience = () => {
 									</div>
 								</div>
 							</div>
-							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+							<div className='container' data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+600}>
 								<div className='button'/>
 								<div className='content'>
 									<div className='title'>
@@ -116,7 +116,7 @@ const Experience = () => {
 									</div>
 								</div>
 							</div>
-							<div className='container' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
+							<div className='container' data-aos="fade-up" data-aos-easing="ease-out-sine" data-aos-duration={delay+800}>
 								<div className='button'/>
 								<div className='content'>
 									<div className='title'>

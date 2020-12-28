@@ -196,16 +196,16 @@ const Projects = () => {
 				position: 'absolute',
 			}}>
 				<div className='projects'>
-					<div className='project' data-aos="fade-right" data-aos-easing="ease-out-sine" data-aos-duration={delay+0}>
+					<div className='project' data-aos="fade-right" data-aos-easing="ease-out-sine" data-aos-duration={delay+200}>
 						<div onClick={() => setProject(0)} className='title' id={project === 0 ? 'selected' : ''}>Quick-Pick</div>
 					</div>
-					<div className='project' data-aos="fade-right" data-aos-easing="ease-out-sine" data-aos-duration={delay+500}>
+					<div className='project' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+400}>
 						<div onClick={() => setProject(1)} className='title' id={project === 1 ? 'selected' : ''}>Gomoku AI</div>
 					</div>
-					<div className='project' data-aos="fade-right" data-aos-easing="ease-out-sine" data-aos-duration={delay+1000}>
+					<div className='project' data-aos="fade-right" data-aos-easing="ease-out-sine" data-aos-duration={delay+300}>
 						<div onClick={() => setProject(2)} className='title' id={project === 2 ? 'selected' : ''}>Library System</div>
 					</div>
-					<div className='project' data-aos="fade-right" data-aos-easing="ease-out-sine" data-aos-duration={delay+1500}>
+					<div className='project' data-aos="fade-left" data-aos-easing="ease-out-sine" data-aos-duration={delay+500}>
 						<div onClick={() => setProject(3)} className='title' id={project === 3 ? 'selected' : ''}>Passion Projects</div>
 					</div>
 				</div>

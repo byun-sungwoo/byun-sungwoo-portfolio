@@ -67,12 +67,20 @@ const Ending = (props) => {
 			flexDirection: 'column',
 		}}
 		>
+			<div style={{position: 'fixed', whiteSpace: 'nowrap', top: '2em', right:'2em'}}>
+				<div className='homeIcon' onClick={() => props.moveTo(1)}>
+					<HomeIcon className='iconImage' style={{color: 'white', fontSize:'4vh', padding:'1vh'}}/>
+				</div>
+			</div>
 			<div className='loader'>
 				<span></span>
 				<span></span>
 				<span></span>
 			</div>
 			<div hidden={true}>{image1()}</div>
+			<div style={{position:'absolute', left:'0', margin: '0', height: '100vh', overflow: 'hidden'}}>
+				{links()}
+			</div>
 		</div>
 	)}
 	let delay = 1000;
