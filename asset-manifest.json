@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/byun-sungwoo-portfolio/static/css/main.b59d92f5.chunk.css",
-    "main.js": "/byun-sungwoo-portfolio/static/js/main.0affae54.chunk.js",
-    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.0affae54.chunk.js.map",
+    "main.js": "/byun-sungwoo-portfolio/static/js/main.7520be63.chunk.js",
+    "main.js.map": "/byun-sungwoo-portfolio/static/js/main.7520be63.chunk.js.map",
     "runtime-main.js": "/byun-sungwoo-portfolio/static/js/runtime-main.492f62b4.js",
     "runtime-main.js.map": "/byun-sungwoo-portfolio/static/js/runtime-main.492f62b4.js.map",
     "static/css/2.ec02d681.chunk.css": "/byun-sungwoo-portfolio/static/css/2.ec02d681.chunk.css",
@@ -17,7 +17,7 @@
     "static/media/about.5d7b21b6.png": "/byun-sungwoo-portfolio/static/media/about.5d7b21b6.png",
     "static/media/contact.d63af4bc.png": "/byun-sungwoo-portfolio/static/media/contact.d63af4bc.png",
     "static/media/experience.2cbf8af1.png": "/byun-sungwoo-portfolio/static/media/experience.2cbf8af1.png",
-    "static/media/img1.857c3ed1.png": "/byun-sungwoo-portfolio/static/media/img1.857c3ed1.png",
+    "static/media/img2.6f4e1ab9.jpg": "/byun-sungwoo-portfolio/static/media/img2.6f4e1ab9.jpg",
     "static/media/intro.e96bfce5.png": "/byun-sungwoo-portfolio/static/media/intro.e96bfce5.png",
     "static/media/projects.08b880f1.png": "/byun-sungwoo-portfolio/static/media/projects.08b880f1.png"
   },
@@ -26,6 +26,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.66b62392.chunk.js",
     "static/css/main.b59d92f5.chunk.css",
-    "static/js/main.0affae54.chunk.js"
+    "static/js/main.7520be63.chunk.js"
   ]
 }
